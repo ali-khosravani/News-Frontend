@@ -1,0 +1,24 @@
+.MainHeader{
+    height: 55px;
+    background-color: #fff;
+    width: 100%;
+    font-family: irsansbold;
+    display: block;
+
+}
+.main-menu ul li{
+    height: 100%;
+    padding: 0.5rem 0;
+    position: relative;
+    display: list-item;
+}
+.main-menu ul li a{
+    color: #385e9d;
+    font-size: 13px;
+    padding: 0 6px;
+    border-left: 1px solid rgba(18, 18, 18, 0.2);
+    text-decoration: none;
+}
+ .main-menu ul li a:hover{
+    color: #ffb81c;
+ }

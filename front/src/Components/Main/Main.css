@@ -1,0 +1,29 @@
+.Main{    
+    display: block;
+}
+.main-contain{
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+
+.news-list{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+}
+.selection{
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+}
+.full-read{
+    height: 500px;
+    width: 100%;
+    background-color: green;
+}
+.test{
+    
+    background-color: red;
+    height: 800px;
+}

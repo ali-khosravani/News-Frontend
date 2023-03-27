@@ -1,0 +1,22 @@
+.MainTopMenu{
+    background-color: #385e9d;
+    width: 100%;
+    line-height: 24px;
+    padding: 10px 0;
+    display: flex !important;
+    height: 32px;
+    box-sizing: border-box;
+    font-family: irsans;
+}
+.menu a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 12px;
+    margin-right: 6px;
+    padding-right: 6px;
+    border-right:1px solid #737171 ;
+}
+.menu a:hover{
+    color: #ffb81c;
+    text-decoration: none;
+}

@@ -1,16 +1,16 @@
 import React , {useState , useEffect} from "react";
-import UserService from './UserService';
+import TopNewsService from './TopNewsService';
 import './TopNews.css';
 
 function TopNews(){
     const [users ,setUsers] = useState([])
 
     useEffect(()=> {
-        getUsers()
+        getTopNews()
     } ,[])
 
-    const getUsers = ()=>{
-        UserService.getUsers().then((response)=>{
+    const getTopNews = ()=>{
+        TopNewsService.getTopNews().then((response)=>{
             setUsers(response.data)
             console.log(response.data)
         });

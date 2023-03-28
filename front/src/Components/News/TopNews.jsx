@@ -22,10 +22,8 @@ function TopNews(){
                     <thead>
                         <tr>
                             <th>کد</th>
-                            <th>نام</th>
-                            <th>نام خانوادگی</th>
-                            <th>ایمیل</th>
-                            <th>رمز عبور</th>
+                            <th>عنوان</th>
+                            <th>آدرس عکس</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,10 +32,7 @@ function TopNews(){
                                 user =>
                                 <tr key={user.id}>
                                     <td>{user.id}</td>
-                                    <td>{user.firstName}</td>
-                                    <td>{user.lastName}</td>
-                                    <td>{user.email}</td>
-                                    <td>{user.password}</td>
+                                    <td>{user.firstName}</td>                                    
                                 </tr>
                             )
                         }

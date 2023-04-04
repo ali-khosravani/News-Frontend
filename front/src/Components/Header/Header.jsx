@@ -1,5 +1,5 @@
 import './Header.css';
-import logo from './../../assets/images/farsnews.svg';
+import logo from '../../farsnews.svg';
 import home from './../../../node_modules/bootstrap-icons/icons/house-fill.svg';
 function Header() {
     return ( 

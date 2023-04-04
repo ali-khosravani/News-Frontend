@@ -1,46 +1,26 @@
-import React , {useState , useEffect} from "react";
-import TopNewsService from './TopNewsService';
+import axios from "axios";
+import { useState ,useEffect} from "react";
 import './TopNews.css';
 
-function TopNews(){
-    const [users ,setUsers] = useState([])
+function TopNewsService() {
+    const [topnews , setTopnews] = useState([])
+    useEffect(()=>{
+        getTopnews()
+    } , [])
 
-    useEffect(()=> {
-        getTopNews()
-    } ,[])
-
-    const getTopNews = ()=>{
-        TopNewsService.getTopNews().then((response)=>{
-            setUsers(response.data)
-            console.log(response.data)
+    const getTopnews =async ()=>{
+        await axios.get('http://localhost:8085/TopNews/1').then((res)=>{
+            setTopnews(res.data)
         });
     };
-    return(
-        <section className="top-news">
-            <div className="container">
-                <table className="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>کد</th>
-                            <th>عنوان</th>
-                            <th>آدرس عکس</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            users.map(
-                                user =>
-                                <tr key={user.id}>
-                                    <td>{user.id}</td>
-                                    <td>{user.firstName}</td>                                    
-                                </tr>
-                            )
-                        }
-                    </tbody>
-
-                </table>
-            </div>
-        </section>
-    )
+    return ( 
+        <>
+            <img src={`../images/topnews/${topnews.imgUrl}`} alt={`${topnews}`} height={300} width="100%"/>  
+            <div className="over-image-div">
+                <h4 className="over-image">{topnews.title}</h4>   
+            </div>           
+                   
+        </>          
+     );
 }
-export default TopNews
+export default TopNewsService;

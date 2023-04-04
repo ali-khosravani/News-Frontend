@@ -1,11 +1,15 @@
 .Main{    
     display: block;
 }
-.main-contain{
+.main-container{
     padding-right: 10px !important;
     padding-left: 10px !important;
 }
 
+.text-over-image{
+    position: relative ;
+    text-align:right;   
+}
 
 .news-list{
     height: 500px;

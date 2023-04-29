@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import TopNews from '../News/TopNews';
-
+import FavoritesNews from '../News/FavoritesNews';
 
 import './Main.css'
+
 class Main extends Component {
     state = {  } 
     render() { 
         return (
             <div className="Main" dir='rtl'>
-                <div className='container pt-5 main-container'>
+                <div className='pt-5 main-container'>
                     <div className='row'>
                         <div className='col-12 col-lg-9 float-right'>
                             <div className='row'>
@@ -32,7 +33,9 @@ class Main extends Component {
                             </div>
                             <div className='col-12 col-md-4 flex-column p-0 m-0'>
                                 <section>
-                                    <div className='selection'></div>
+                                    <div className='selection'>
+                                        <FavoritesNews/>
+                                    </div>
                                 </section>
                                 <section>
                                     <div className='full-read'>

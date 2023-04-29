@@ -15,7 +15,7 @@ function TopNewsService() {
     };
     return ( 
         <>
-            <img src={`../images/topnews/${topnews.imgUrl}`} alt={`${topnews}`} height={300} width="100%"/>  
+            <img src={`../images/topnews/${topnews.imgUrl}`} alt={`${topnews}`} height={350} width="100%"/>  
             <div className="over-image-div">
                 <h4 className="over-image">{topnews.title}</h4>   
             </div>           

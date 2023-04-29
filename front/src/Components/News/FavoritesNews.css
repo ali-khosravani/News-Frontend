@@ -1,0 +1,18 @@
+@font-face {
+    font-family: irsans;
+    src: url(../../assets/fonts/irsans-1.ttf);
+  }
+  @font-face {
+    font-family: irsansbold;
+    src: url(../../assets/fonts/IRAN-Sans-Bold.ttf);
+  }
+.selection_header{
+    height: 40px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #385e9d;
+    font-family: irsans !important; 
+}
+.selection_ul{
+    font-family: irsans !important;
+}

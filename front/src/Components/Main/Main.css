@@ -4,9 +4,11 @@
 .main-container{
     padding-right: 10px !important;
     padding-left: 10px !important;
+    margin: 0 150px;
 }
 
 .text-over-image{
+    height: 350px;
     position: relative ;
     text-align:right;   
 }
@@ -17,9 +19,8 @@
     background-color: aqua;
 }
 .selection{
-    height: 300px;
+    height: 350px;
     width: 100%;
-    background-color: yellow;
 }
 .full-read{
     height: 500px;
@@ -29,5 +30,5 @@
 .test{
     
     background-color: red;
-    height: 800px;
+    height: 850px;
 }
